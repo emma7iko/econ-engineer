@@ -1,4 +1,4 @@
-# CSV Chart Viewer  
+# EconomicsEngineer
 
 **A web application that allows users to perform various Economic calculations, in various topics.**  
 ![screenshot](screenshot.png)
