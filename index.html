@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcut icon" href="icon.jpeg" type="image/x-icon"/>
+<title>Emmatiko | Economics Engineering Calculator</title>
+</head>
+<body>
+<div class="wrapper">
+  <header class="header">
+    <h1 class="title">Economics Engineering Calculator</h1>
+  </header>
+  <div class="container">
+    <table class="form-table">
+      <tr>
+        <td><label for="factor">Factor Type:</label></td>
+        <td>
+          <select id="factor" name="factor">
+            <option value="P/F">Present Worth Factor</option>
+            <option value="P/A">Capital Recovery Factor</option>
+            <option value="P/G">Uniform Gradient Series Factor for Present Value</option>
+            <option value="F/P">Future Value Factor</option>
+            <option value="F/A">Future Value Factor for an Annuity</option>
+            <option value="F/G">Future Value Factor for a Uniform Gradient Series</option>
+            <option value="A/P">Uniform Payment Series Factor for Capital Recovery</option>
+            <option value="A/F">Annual Worth Factor</option>
+            <option value="A/G">Annual Worth Factor for a Uniform Gradient Series</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="i">Interest Rate (i):</label></td>
+        <td><input type="number" id="i" name="i" placeholder="Interest rate (%)"></td>
+      </tr>
+      <tr>
+        <td><label for="n">Number of Interest Periods (N):</label></td>
+        <td><input type="number" id="n" name="n" placeholder="Number of periods"></td>
+      </tr>
+    </table>
+    <button onclick="calculate_factor()">Calculate</button>
+    <p id="result"></p>
+  </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
